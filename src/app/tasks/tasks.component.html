@@ -1,0 +1,11 @@
+<div class="container">
+  <mat-toolbar>
+    <button mat-raised-button (click)="toggleShowList()">
+      {{ showListButtonText }}
+    </button>
+  </mat-toolbar>
+
+  <div *ngIf="showList">
+    <app-tasks-list></app-tasks-list>
+  </div>
+</div>
